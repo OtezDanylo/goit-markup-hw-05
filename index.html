@@ -56,7 +56,18 @@
     <section class="underheader">
       <div class="container ">
         <h1 class="heading">Эффективные решения для вашего бизнеса</h1>
-        <button type="button" class="head-button">Заказать услугу</button>
+        <button type="button" class="head-button" data-modal-open>Заказать услугу</button>
+        <div class="backdrop is-hidden" data-modal>
+          <div class="modal">
+            <div class="div-cross-button">
+            <button type="button" class="cross-button" data-modal-close>
+              <svg class="cross-svg">
+              <use href="./images/modal-window.svg#icon-cross"></use>
+            </svg>
+          </button>
+          </div>
+           </div>
+        </div>
       </div>
     </section>
     <!-- Чому ми?  -->
@@ -110,13 +121,16 @@
         <h2 class="doing">Чем мы занимаемся</h2>
         <ul class="doing-container list">
           <li class="doing-list-items">
-            <img src="./images/pc.jpg" alt="Компьютер" width="370" />
+             <img src="./images/pc.jpg" alt="Компьютер" width="370" />
+            <p class="doing-txt">десктопные приложения</p>
           </li>
           <li class="doing-list-items">
             <img src="./images/laptop.jpg" alt="Лаптоп" width="370" />
+            <p class="doing-txt">Мобильные приложения</p>
           </li>
           <li class="doing-list-items">
             <img src="./images/tablet.jpg" alt="Планшет" width="370" />
+          <p class="doing-txt">Дизайнерские решения</p>
           </li>
         </ul>
       </div>
@@ -325,6 +339,7 @@
     </div>
     </div>
   </footer>
+  <script src="./modal.js"></script>
 </body>
 
 </html>
